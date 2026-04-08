@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Surprise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+  <div id="page1" class="page show">
+    <h1 id="page1Heading">Hey my sweetheart</h1>
+    <div class="emoji" id="page1Emoji">😍</div>
+    <p id="greetingMsg">I'm glad you came, my sosa mala ❤️</p>
+  </div>
+
+  <div id="page2" class="page">
+    <h1 id="birthdayHeading">Is today your birthday? 😋</h1>
+    <div class="emoji" id="birthdayEmoji">🎂</div>
+    <div class="buttons" id="birthdayButtons">
+      <button onclick="answerYes()">Yes</button>
+      <button onclick="answerNo()">No</button>
+    </div>
+  </div>
+
+
+  <div id="page3" class="page">
+    <div id="messageBox"></div>
+    <button id="sendButton" onclick="sendMessage()">Send</button>
+  </div>
+
+  <div id="page4" class="page">
+    <div id="page4Text">Yes .. His name is <span id="pasindu">Pasindu</span></div>
+  </div>
+
+  <div id="page5" class="page">
+    <div id="page5Text">He owns the most sacred heart</div>
+  </div>
+
+  <div id="page7" class="page">
+    <div id="page7Text">I want to walk holding his hand for the rest of my <span id="highlightLife">life</span></div>
+  </div>
+
+  <div id="page8" class="page">
+    <div id="page8Text">Because,</div>
+  </div>
+
+  <div id="page9" class="page">
+    <div id="page9Text">
+      <span id="lineText">He is in the left rib of my chest</span>
+      <span>😉</span>
+    </div>
+  </div>
+
+  <div id="page10" class="page">
+    <div id="page10Text" style="font-size: clamp(48px, 12vw, 120px);"></div>
+  </div>
+
+  <div id="page11" class="page">
+    <div class="balloon pink"></div>
+    <div class="balloon blue"></div>
+    <div class="balloon yellow"></div>
+    <div class="balloon green"></div>
+    <div class="balloon purple"></div>
+    <div class="balloon red"></div>
+  </div>
+
+
+<div id="page12" class="page">
+  <div class="final-container">
+    <div id="finalBirthdayText">Happy Birthday My Love</div>
+    
+    <div class="photo-wrap">
+      <img src="memory.jpg" alt="Our Memory" class="final-img">
+    </div>
+
+    <div id="bottomMessage">I am always with you ;)</div>
+  </div>
+</div>
+
+<div id="page13" class="page">
+  <div id="page13Content">
+    <div class="fade-down large-text">
+      <p>😘😘😘 Sending you to lot of kisses😘😘😘</p>
+      <p>Are you happy in this surprise?</p>
+    </div>
+    
+    <div id="surpriseResponse">
+      <button onclick="sayUmmah()">Yes</button>
+      <button onclick="alert('Oh no! I will try harder next time 🥺')">No</button>
+    </div>
+
+    <div class="fade-up">
+      <p id="watchAgain" onclick="restartSurprise()">
+        Click here to watch again
+      </p>
+    </div>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
