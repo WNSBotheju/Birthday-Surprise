@@ -79,18 +79,27 @@ function showPage10() {
           document.getElementById("page11").classList.remove("show");
           const page12 = document.getElementById("page12");
           page12.classList.add("show");
+
+          // --- VIDEO SOUND FIX START ---
+          const video = document.querySelector('.final-vid'); 
+          if (video) {
+            video.muted = false; 
+            video.volume = 1.0;
+            video.play().catch(e => console.log("Audio play blocked:", e));
+          }
+          // --- VIDEO SOUND FIX END ---
           
-          // Start the LARGE floating hearts
           const heartInterval = setInterval(createHeart, 300); 
 
-          // --- Click Listener for Page 12 to Page 13 ---
           page12.onclick = () => {
-            clearInterval(heartInterval); // Stop making hearts
+            clearInterval(heartInterval);
             page12.classList.remove("show");
             document.getElementById("page13").classList.add("show");
           };
           
-        }, 8000); 
+        }, 8000);
+
+
       }, { once: true });
     }
   }, 400);
